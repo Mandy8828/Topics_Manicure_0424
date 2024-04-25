@@ -5,7 +5,7 @@ const app = Vue.createApp({
     };
   },
   mounted() {
-    fetch("./json/Nailstyle-0.json")
+    fetch("./json/nailStyle_0.json")
       .then((response) => response.json())
       .then((data) => {
         this.nailstyles = data;

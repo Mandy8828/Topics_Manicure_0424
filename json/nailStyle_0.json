@@ -1,97 +1,145 @@
 [
   {
+    "id": 1,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-ci.nail_beauty.jpg",
     "author": "by ci.nail_beauty"
   },
   {
+    "id": 2,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/01-metea_.art.jpg",
     "author": "by metea_.art"
   },
   {
+    "id": 3,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-han_nail.jpg",
     "author": "by han_nail"
   },
   {
+    "id": 4,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/01-mita_nail.jpg",
     "author": "by mita_nail"
   },
   {
+    "id": 5,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-llavender.nail.jpg",
     "author": "by llavender.nail"
   },
   {
+    "id": 6,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/01-putonnails_.jpg",
     "author": "by putonnails_"
   },
   {
+    "id": 7,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-musenails.jpg",
     "author": "by musenails"
   },
   {
+    "id": 8,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/01-youzinei.nail.jpg",
     "author": "by youzinei.nail"
   },
   {
+    "id": 9,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-og_hsin_nails_.jpg",
     "author": "by og_hsin_nails_"
   },
   {
+    "id": 10,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-ci.nail_beauty.jpg",
     "author": "by ci.nail_beauty"
   },
   {
+    "id": 11,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-starlightnails.jpg",
     "author": "by starlightnails"
   },
   {
+    "id": 12,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-llavender.nail.jpg",
     "author": "by llavender.nail"
   },
   {
+    "id": 13,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/01-time_fans.studio.jpg",
     "author": "by time_fans.studio"
   },
   {
+    "id": 14,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-metea_.art.jpg",
     "author": "by metea_.art"
   },
   {
+    "id": 15,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/02-han_nail.jpg",
     "author": "by han_nail"
   },
   {
+    "id": 16,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-mita_nail.jpg",
     "author": "by mita_nail"
   },
   {
+    "id": 17,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/02-og_hsin_nails_.jpg",
     "author": "by og_hsin_nails_"
   },
   {
+    "id": 18,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-musenails.jpg",
     "author": "by musenails"
   },
   {
+    "id": 19,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/02-starlightnails.jpg",
     "author": "by starlightnails"
   },
   {
+    "id": 20,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-putonnails_.jpg",
     "author": "by putonnails"
   },
   {
+    "id": 21,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/02-time_fans.studio.jpg",
     "author": "by time_fans.studio"
   },
   {
+    "id": 22,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/02-youzinei.nail.jpg",
     "author": "by youzinei.nail"
   },
   {
+    "id": 23,
+    "classification": 3,
     "imgSrc": "./image/nailstyle-modeling/03-han_nail.jpg",
     "author": "by han_nail"
   },
   {
+    "id": 24,
+    "classification": 4,
     "imgSrc": "./image/nailstyle-monochrome/03-ci.nail_beauty.jpg",
     "author": "by ci.nail_beauty"
   }
