@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANICURE</title>
+    <link rel="icon" href="./image/logo.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="./css/mproblem.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="frame">
+        <div
+          class="left"
+          id="Homepage"
+          ref="Homepage"
+          style="cursor: pointer"
+        ></div>
+        <div class="right">
+          <div class="item"><a href="./Nailstyle-0.html">美甲款式</a></div>
+          <div class="item"><a href="./Storeguide.html">店家導覽</a></div>
+          <div class="item"><a href="./Appointmentform.html">預約表單</a></div>
+          <div class="item"><a href="./mproblem.html">常見問題</a></div>
+        </div>
+        <div class="right1">
+          <button class="item-right1">
+            <router-link to="/member">登入 / 註冊</router-link>
+          </button>
+        </div>
+      </div>
+      <div class="title">
+        <div class="text">常見問題</div>
+      </div>
+      <details v-for="faq in faqs" :key="faq.question">
+        <summary>{{ faq.question }}</summary>
+        <div class="answer" v-if="typeof faq.answer === 'string'">
+          {{ faq.answer }}
+        </div>
+        <div
+          class="answer"
+          v-if="typeof faq.answer === 'object' && faq.answer.table"
+        >
+          <table>
+            <tr>
+              <th v-for="header in faq.answer.table.headers">{{ header }}</th>
+            </tr>
+            <tr v-for="row in faq.answer.table.rows">
+              <td v-for="cell in row">{{ cell }}</td>
+            </tr>
+          </table>
+        </div>
+        <div
+          class="answer"
+          v-if="typeof faq.answer === 'object' && faq.answer.list"
+        >
+          <ul>
+            <li v-for="item in faq.answer.list">{{ item }}</li>
+          </ul>
+        </div>
+      </details>
+      <div class="footer">
+        <div class="footer1">
+          <div class="footer1_pic"></div>
+        </div>
+        <div class="footer2">
+          <div>
+            <p>美甲預約平台</p>
+            <p>☏ 0900-000000</p>
+          </div>
+        </div>
+        <div class="footer3">
+          <div>
+            <p>✉ manicure@gmail.com</p>
+            <p>台中市南屯區公益路二段51號18樓</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/mproblem.js"></script>
+  </body>
+</html>

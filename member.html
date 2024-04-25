@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MANICURE</title>
+    <link rel="icon" href="./image/logo.png" type="image/png" />
+
+    <link rel="stylesheet" type="text/css" href="./css/member.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Frame Component -->
+      <frame-component @show-hide="show_hide"></frame-component>
+
+      <!-- Title Component -->
+      <div class="title">
+        <div class="text">會員登入 / 註冊</div>
+      </div>
+
+      <!-- Login and Signup Components -->
+      <div class="one" v-if="showLogin">
+        <login-component
+          :account1="account1"
+          :password1="password1"
+          @show-signup="showSignup = true"
+          @login="login1"
+        >
+        </login-component>
+      </div>
+      <div class="two" v-if="showSignup">
+        <signup-component
+          :account2="account2"
+          :password2="password2"
+          :password3="password3"
+          @show-login="showLogin = true"
+          @signup="signupHandler"
+        >
+        </signup-component>
+      </div>
+
+      <!-- Footer Component -->
+      <footer-component></footer-component>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/member.js"></script>
+  </body>
+</html>

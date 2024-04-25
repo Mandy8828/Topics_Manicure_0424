@@ -1,0 +1,262 @@
+body {
+  background-color: #ede2e0;
+}
+
+.frame {
+  display: flex;
+  height: 80px;
+}
+
+.left {
+  flex: none;
+  align-items: flex-start;
+  width: 22%;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-image: url("../image/logoname.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  width: 60%;
+  font-size: 20px;
+  color: #8c736f;
+}
+.item {
+  flex: none;
+  width: 100px;
+  margin: 15px;
+  text-align: center;
+}
+
+.item a {
+  text-decoration: none;
+  color: #8c736f;
+  letter-spacing: 2px;
+}
+
+.item a:hover {
+  border-bottom: 2px solid #8c736f;
+}
+
+.right1 {
+  align-items: center;
+  flex: none;
+  display: flex;
+  width: 15%;
+  justify-content: center;
+}
+
+.item-right1 {
+  margin: 5px;
+  font-size: 15px;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #ede2e0;
+}
+
+.item-right1 a {
+  text-decoration: none;
+  color: #8c736f;
+  font-weight: bolder;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid #8c736f;
+  height: 65px;
+}
+.text {
+  width: 300px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #8c736f;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.side {
+  flex: none;
+  width: 20%;
+  margin: 0 5px;
+  letter-spacing: 5px;
+  line-height: 35px;
+  font-size: 20px;
+  color: #8c736f;
+}
+
+.side ul {
+  list-style: none;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+.side a {
+  text-decoration: none;
+  color: #8c736f;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.another {
+  flex: none;
+  width: 80%;
+  margin: 0 5px;
+}
+
+.another ul {
+  column-count: 3;
+  padding: 20px;
+  list-style: none;
+}
+
+.another li {
+  break-inside: avoid;
+}
+
+.another img {
+  display: block;
+  width: 275px;
+  height: 275px;
+  border-radius: 30px;
+  transition: transform 0.2s;
+}
+
+.another img:hover {
+  transform: scale(1.5);
+}
+
+.another p {
+  font-size: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-top: 4px solid #8c736f;
+  margin-top: 50px;
+  color: #8c736f;
+}
+
+.footer1 {
+  width: 35%;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer1_pic {
+  width: 200px;
+  height: 50px;
+  background-image: url("../image/logoname.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer2 {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer2 ul {
+  list-style-type: none;
+}
+
+.footer2 li {
+  line-height: 30px;
+}
+
+.footer3 {
+  width: 45%;
+  height: 100px;
+}
+
+.footer3 ul {
+  list-style-type: none;
+}
+
+.footer3 li {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 854px) {
+  .frame {
+    flex-direction: column; /* 在小螢幕上將 flex 容器的方向更改為垂直列 */
+    align-items: center;
+    height: auto;
+  }
+
+  .left {
+    width: 100%; /* 佔滿寬度 */
+    height: 40px;
+    margin: 10px 0; /* 移除左側邊距 */
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .right {
+    width: 100%; /* 佔滿寬度 */
+    text-align: center; /* 文字置中 */
+    margin-top: 10px; /* 上方外邊距 */
+  }
+
+  .right1 {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 10px;
+  }
+
+  .footer1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer1_pic {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .footer2 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer3 {
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+  }
+}

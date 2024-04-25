@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANICURE</title>
+    <link rel="stylesheet" type="text/css" href="./css/member.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="left" id="Homepage" style="cursor: pointer;"></div>
+        <div class="right">
+            <div class="item"><a href="./Nailstyle-0.html">美甲款式</a></div>
+            <div class="item"><a href="./Storeguide.html">店家導覽</a></div>
+            <div class="item"><a href="./Appointmentform.html">預約表單</a></div>
+            <div class="item"><a href="./mproblem.html">常見問題</a></div>
+        </div>
+        <div class="right1">
+            <button class="item-right1"><a href="./member.html">登入 / 註冊</a></button>
+        </div>
+    </div>
+    <div class="title">
+        <div class="text">會員登入 / 註冊</div>
+    </div>
+
+    <div class="one">
+        <div class="login_page" id="login">
+            <div class="login">
+                <h3>登入 Login</h3>
+
+                <form>
+                    <div><label for="account">帳號：</label></div>
+                    <div><input type="email" name="account1" id="account1" required></div>
+                    <div><br></div>
+                    <div><label for="password">密碼：</label></div>
+                    <div><input type="password" name="password1" id="password1" required></div>
+
+                    <div><br></div>
+                    <div><button type="login" name="login" onclick="login1 ()">登入</button></div>
+                    <!-- <input type="submit" value="登入" class="submit" onclick="login1 ()" id="loginButton"> -->
+                </form>
+
+                <p onclick="show_hide()" style="cursor: pointer;">註冊帳號</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="signup_page" id="signup">
+            <div class="signup">
+                <h3>註冊 Sign up</h3>
+
+                <form id="signupForm">
+                    <div><label for="account2">帳號：</label></div>
+                    <div><input type="email" id="account2" name="account2" required/></div>
+                    <div><br></div>
+                    <div><label for="password2">密碼：</label></div>
+                    <div><input type="password" name="password2" id="password2" required/></div>
+                    <div><br></div>
+                    <div><label for="password3">請再次輸入密碼：</label></div>
+                    <div><input type="password" name="password3" id="password3" required/></div>
+                    <div><br></div>
+                    <div><button type="submit" name="submit">註冊</button></div>
+                </form>
+
+                <p onclick="show_hide()" style="cursor: pointer;">登入會員</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer1_pic"></div>
+        </div>
+        <div class="footer2">
+            <div>
+                <p>美甲預約平台</p>
+                <p>☏ 0900-000000</p>
+            </div>
+        </div>
+        <div class="footer3">
+            <div>
+                <p>✉ manicure@gmail.com</p>
+                <p>台中市南屯區公益路二段51號18樓</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./js/member.js"></script>
+</body>
+</html>

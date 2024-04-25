@@ -1,0 +1,101 @@
+[
+  {
+    "id": "one",
+    "storepic": "./image/store/01-starlightnails.jpg",
+    "storename": "STARLIGHT NAILS",
+    "storelink": "https://www.instagram.com/starlightnails__/",
+    "location": "台北",
+    "address": "捷運中山站2號出口3分鐘",
+    "priceimg": "./image/price/01.jpg"
+  },
+  {
+    "id": "two",
+    "storepic": "./image/store/02-putonnails_.jpg",
+    "storename": "PUT ON NAILS",
+    "storelink": "https://www.instagram.com/putonnails_/",
+    "location": "台北",
+    "address": "行天宮站5分鐘",
+    "priceimg": "./image/price/02.png"
+  },
+  {
+    "id": "three",
+    "storepic": "./image/store/03-time_fans.studio.jpg",
+    "storename": "Time Fans時分美甲工作室",
+    "storelink": "https://www.instagram.com/time_fans.studio/",
+    "location": "台北",
+    "address": "菜寮站3號出口(大同路口站)",
+    "priceimg": "./image/price/03.png"
+  },
+  {
+    "id": "four",
+    "storepic": "./image/store/04-llavender.nail.jpg",
+    "storename": "Lavender.nail",
+    "storelink": "https://www.instagram.com/llavender.nail/",
+    "location": "桃園",
+    "address": "桃園區復興路近火車站步行3分鐘",
+    "priceimg": "./image/price/04.png"
+  },
+  {
+    "id": "five",
+    "storepic": "./image/store/05-mita_nail.jpg",
+    "storename": "Mita nail",
+    "storelink": "https://www.instagram.com/mita_nail/",
+    "location": "新竹",
+    "address": "新竹市西大路582巷27號",
+    "priceimg": "./image/price/05.png"
+  },
+  {
+    "id": "six",
+    "storepic": "./image/store/06-ci.nail_beauty.jpg",
+    "storename": "CI.NAIL_BEAUTY",
+    "storelink": "https://www.instagram.com/ci.nail_beauty/",
+    "location": "台中",
+    "address": "台中市西屯區近大墩19街",
+    "priceimg": "./image/price/06.png"
+  },
+  {
+    "id": "seven",
+    "storepic": "./image/store/07-han_nail.jpg",
+    "storename": "HAN NAIL",
+    "storelink": "https://www.instagram.com/han___nail/",
+    "location": "台中",
+    "address": "台中市北區育才北路40號2樓",
+    "priceimg": "./image/price/07.png"
+  },
+  {
+    "id": "eight",
+    "storepic": "./image/store/08-musenails.jpg",
+    "storename": "Muse nails",
+    "storelink": "https://www.instagram.com/musenails7/",
+    "location": "台中",
+    "address": "台中市霧峰區柳豐六街12號",
+    "priceimg": "./image/price/08.png"
+  },
+  {
+    "id": "nine",
+    "storepic": "./image/store/09-og_hsin_nails_.jpg",
+    "storename": "OG_HSIN_Nails",
+    "storelink": "https://www.instagram.com/og_hsin_nails_/",
+    "location": "台中",
+    "address": "南屯(預約完成後告知)",
+    "priceimg": "./image/price/09.png"
+  },
+  {
+    "id": "ten",
+    "storepic": "./image/store/10-youzinei.nail.jpg",
+    "storename": "柚子捏",
+    "storelink": "https://www.instagram.com/youzinei.nail/",
+    "location": "台中",
+    "address": "台中市北屯區(預約完成後告知)",
+    "priceimg": "./image/price/10.png"
+  },
+  {
+    "id": "eleven",
+    "storepic": "./image/store/11-metea_.art.jpg",
+    "storename": "METEA ART",
+    "storelink": "https://www.instagram.com/metea_.art/",
+    "location": "台南",
+    "address": "(預約完成後告知)",
+    "priceimg": "./image/price/11.png"
+  }
+]
