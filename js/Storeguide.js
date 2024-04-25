@@ -24,13 +24,11 @@ const app = Vue.createApp({
     filterStoresByLocation(location) {
       this.selectedLocation = location;
     },
-    // 處理首頁點擊事件
     goToHomepage() {
       window.location = "./index.html";
     },
   },
   computed: {
-    // 使用計算屬性來過濾店家
     filteredStores() {
       if (!this.selectedLocation) {
         return this.stores;
@@ -42,14 +40,14 @@ const app = Vue.createApp({
   },
   mounted() {
     this.fetchData();
-    // 綁定地點過濾函數到DOM元素
+
     document.querySelectorAll(".side ul li").forEach((li) => {
       li.addEventListener("click", (event) => {
         const location = event.target.textContent.trim();
         this.filterStoresByLocation(location);
       });
     });
-    // 綁定首頁點擊事件
+
     document.querySelector("#Homepage").addEventListener("click", () => {
       this.goToHomepage();
     });

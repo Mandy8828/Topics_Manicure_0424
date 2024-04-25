@@ -38,7 +38,6 @@ const app = Vue.createApp({
         localStorage.setItem("account", this.signupAccount);
         localStorage.setItem("password", this.signupPassword);
 
-        // 設置 showLogin 為 true 以顯示登入部分
         this.showLogin = true;
       } else {
         alert("密碼輸入不正確");

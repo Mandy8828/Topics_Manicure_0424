@@ -3,7 +3,7 @@ const { createApp, ref } = Vue;
 const app = createApp({
   data() {
     return {
-      faqs: [], // 初始化 faqs 為一個空陣列
+      faqs: [],
     };
   },
   mounted() {

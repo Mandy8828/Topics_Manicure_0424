@@ -67,7 +67,6 @@ const app = Vue.createApp({
   },
   methods: {
     handleSubmit() {
-      // 獲取所有表單數據
       const formData = {
         selectedStore: this.selectedStore,
         selectedDate: this.$refs.myDatepicker.selectedDates,
@@ -79,11 +78,9 @@ const app = Vue.createApp({
       };
 
       console.log("提交的表單數據:", formData);
-
-      // 這裡可以將 formData 發送到後端服務器或進行其他業務邏輯處理
     },
     printCurrentTime() {
-      console.log(this.$refs.myDatepicker.selectedDates); // print selected date
+      console.log(this.$refs.myDatepicker.selectedDates);
     },
     goToHomepage() {
       window.location = "./index.html";
