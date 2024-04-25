@@ -7,7 +7,7 @@ const app = createApp({
     };
   },
   mounted() {
-    fetch("/mProblem.json")
+    fetch("./json/mProblem.json")
       .then((response) => response.json())
       .then((data) => {
         this.faqs = data;
@@ -21,11 +21,8 @@ const app = createApp({
   },
 
   methods: {
-    initializeEvents() {
-      const router = app._router;
-      this.$refs.Homepage.onclick = () => {
-        router.push({ path: "/" });
-      };
+    gotoHomepage() {
+      window.location = "./index.html";
     },
   },
 });

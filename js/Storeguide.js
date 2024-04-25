@@ -7,7 +7,7 @@ const app = Vue.createApp({
   },
   methods: {
     fetchData() {
-      fetch("/stores.json")
+      fetch("./json/stores.json")
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
