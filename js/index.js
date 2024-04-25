@@ -30,25 +30,25 @@ const app = Vue.createApp({
       window.location = "./index.html";
     },
     goToShape() {
-      window.location = "./Nailstyle-0.html";
+      window.location = "./nailStyle_0.html";
     },
     goToGuide() {
-      window.location = "./Storeguide.html";
+      window.location = "./storeGuide.html";
     },
     goToAppointmentForm() {
-      window.location = "./Appointmentform.html";
+      window.location = "./appointmentForm.html";
     },
     goToNail1() {
-      window.location = "./Nailstyle-1.html";
+      window.location = "./nailStyle_1.html";
     },
     goToNail2() {
-      window.location = "./Nailstyle-2.html";
+      window.location = "./nailStyle_2.html";
     },
     goToNail3() {
-      window.location = "./Nailstyle-3.html";
+      window.location = "./nailStyle_3.html";
     },
     goToNail4() {
-      window.location = "./Nailstyle-4.html";
+      window.location = "./nailStyle_4.html";
     },
   },
   mounted() {

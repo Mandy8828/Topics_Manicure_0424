@@ -18,7 +18,11 @@
           <div class="item"><a href="./mproblem.html">常見問題</a></div>
         </div>
         <div class="right1" id="loginContainer">
-          <button class="item-right1" @click="loginClick">
+          <button
+            class="item-right1"
+            @click="loginClick"
+            style="cursor: pointer"
+          >
             {{ loginText }}
           </button>
           <button v-if="account" class="item-right1" @click="logout">

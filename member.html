@@ -10,40 +10,95 @@
   </head>
   <body>
     <div id="app">
-      <!-- Frame Component -->
-      <frame-component @show-hide="show_hide"></frame-component>
-
-      <!-- Title Component -->
+      <div class="frame">
+        <div class="left" @click="goToHomepage" style="cursor: pointer"></div>
+        <div class="right">
+          <div class="item"><a href="./nailStyle_0.html">美甲款式</a></div>
+          <div class="item"><a href="./storeGuide.html">店家導覽</a></div>
+          <div class="item"><a href="./appointmentForm.html">預約表單</a></div>
+          <div class="item"><a href="./mProblem.html">常見問題</a></div>
+        </div>
+        <div class="right1">
+          <a href="./member.html"
+            ><button class="item-right1" style="cursor: pointer">
+              登入 / 註冊
+            </button></a
+          >
+        </div>
+      </div>
       <div class="title">
         <div class="text">會員登入 / 註冊</div>
       </div>
 
-      <!-- Login and Signup Components -->
-      <div class="one" v-if="showLogin">
-        <login-component
-          :account1="account1"
-          :password1="password1"
-          @show-signup="showSignup = true"
-          @login="login1"
-        >
-        </login-component>
-      </div>
-      <div class="two" v-if="showSignup">
-        <signup-component
-          :account2="account2"
-          :password2="password2"
-          :password3="password3"
-          @show-login="showLogin = true"
-          @signup="signupHandler"
-        >
-        </signup-component>
+      <div class="one">
+        <div class="login_page" v-show="showLogin" id="login">
+          <div class="login">
+            <h3>登入 Login</h3>
+
+            <form @submit.prevent="login">
+              <div><label for="account">帳號：</label></div>
+              <div><input type="email" v-model="loginAccount" required /></div>
+              <div><br /></div>
+              <div><label for="password">密碼：</label></div>
+              <div>
+                <input type="password" v-model="loginPassword" required />
+              </div>
+              <div><br /></div>
+              <div><button type="submit">登入</button></div>
+            </form>
+
+            <p @click.prevent="toggleForm" style="cursor: pointer">註冊帳號</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Footer Component -->
-      <footer-component></footer-component>
+      <div class="two">
+        <div class="signup_page" v-show="!showLogin" id="signup">
+          <div class="signup">
+            <h3>註冊 Sign up</h3>
+
+            <form @submit.prevent="signup">
+              <div><label for="account2">帳號：</label></div>
+              <div><input type="email" v-model="signupAccount" required /></div>
+              <div><br /></div>
+              <div><label for="password2">密碼：</label></div>
+              <div>
+                <input type="password" v-model="signupPassword" required />
+              </div>
+              <div><br /></div>
+              <div><label for="password3">請再次輸入密碼：</label></div>
+              <div>
+                <input type="password" v-model="confirmPassword" required />
+              </div>
+              <div><br /></div>
+              <div><button type="submit">註冊</button></div>
+            </form>
+
+            <p @click.prevent="toggleForm" style="cursor: pointer">登入會員</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer1">
+          <div class="footer1_pic"></div>
+        </div>
+        <div class="footer2">
+          <div>
+            <p>美甲預約平台</p>
+            <p>☏ 0900-000000</p>
+          </div>
+        </div>
+        <div class="footer3">
+          <div>
+            <p>✉ manicure@gmail.com</p>
+            <p>台中市南屯區公益路二段51號18樓</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
     <script src="./js/member.js"></script>
   </body>
 </html>

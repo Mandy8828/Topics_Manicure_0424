@@ -75,4 +75,4 @@ app.component("store-item", {
   `,
 });
 
-app.mount(".store");
+app.mount("#app");

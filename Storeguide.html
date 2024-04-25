@@ -9,57 +9,59 @@
     <link rel="stylesheet" type="text/css" href="./css/storeGuide.css" />
   </head>
   <body>
-    <div class="frame">
-      <div class="left" id="Homepage" style="cursor: pointer"></div>
-      <div class="right">
-        <div class="item"><a href="./nailStyle_0.html">美甲款式</a></div>
-        <div class="item"><a href="./storeGuide.html">店家導覽</a></div>
-        <div class="item"><a href="./appointmentForm.html">預約表單</a></div>
-        <div class="item"><a href="./mproblem.html">常見問題</a></div>
-      </div>
-      <div class="right1">
-        <button class="item-right1">
-          <a href="./member.html">登入 / 註冊</a>
-        </button>
-      </div>
-    </div>
-    <div class="title">
-      <div class="text">店家導覽</div>
-    </div>
-    <div class="all">
-      <div class="side">
-        <ul>
-          <li>台北</li>
-          <li>桃園</li>
-          <li>新竹</li>
-          <li>台中</li>
-          <li>台南</li>
-        </ul>
-      </div>
-
-      <div class="store">
-        <store-item
-          v-for="store in filteredStores"
-          :key="store.id"
-          :store="store"
-        ></store-item>
-      </div>
-    </div>
-
-    <div class="footer">
-      <div class="footer1">
-        <div class="footer1_pic"></div>
-      </div>
-      <div class="footer2">
-        <div>
-          <p>美甲預約平台</p>
-          <p>☏ 0900-000000</p>
+    <div id="app">
+      <div class="frame">
+        <div class="left" @click="goToHomepage" style="cursor: pointer"></div>
+        <div class="right">
+          <div class="item"><a href="./nailStyle_0.html">美甲款式</a></div>
+          <div class="item"><a href="./storeGuide.html">店家導覽</a></div>
+          <div class="item"><a href="./appointmentForm.html">預約表單</a></div>
+          <div class="item"><a href="./mproblem.html">常見問題</a></div>
+        </div>
+        <div class="right1">
+          <button class="item-right1">
+            <a href="./member.html" style="cursor: pointer">登入 / 註冊</a>
+          </button>
         </div>
       </div>
-      <div class="footer3">
-        <div>
-          <p>✉ manicure@gmail.com</p>
-          <p>台中市南屯區公益路二段51號18樓</p>
+      <div class="title">
+        <div class="text">店家導覽</div>
+      </div>
+      <div class="all">
+        <div class="side">
+          <ul>
+            <li>台北</li>
+            <li>桃園</li>
+            <li>新竹</li>
+            <li>台中</li>
+            <li>台南</li>
+          </ul>
+        </div>
+
+        <div class="store">
+          <store-item
+            v-for="store in filteredStores"
+            :key="store.id"
+            :store="store"
+          ></store-item>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer1">
+          <div class="footer1_pic"></div>
+        </div>
+        <div class="footer2">
+          <div>
+            <p>美甲預約平台</p>
+            <p>☏ 0900-000000</p>
+          </div>
+        </div>
+        <div class="footer3">
+          <div>
+            <p>✉ manicure@gmail.com</p>
+            <p>台中市南屯區公益路二段51號18樓</p>
+          </div>
         </div>
       </div>
     </div>

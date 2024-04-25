@@ -114,10 +114,6 @@ body {
   text-align: center;
 }
 
-.signup_page {
-  visibility: hidden;
-}
-
 .footer {
   display: flex;
   justify-content: center;
