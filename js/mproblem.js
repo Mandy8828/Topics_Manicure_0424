@@ -1,4 +1,4 @@
-const { createApp, ref } = Vue;
+const { createApp } = Vue;
 
 const app = createApp({
   data() {
@@ -11,15 +11,17 @@ const app = createApp({
       .then((response) => response.json())
       .then((data) => {
         this.faqs = data;
-        this.$nextTick(() => {
-          this.initializeEvents();
+        // 在这里执行事件初始化
+        document.querySelectorAll("details").forEach((detail) => {
+          detail.addEventListener("toggle", () => {
+            detail.classList.toggle("open");
+          });
         });
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
   },
-
   methods: {
     gotoHomepage() {
       window.location = "./index.html";

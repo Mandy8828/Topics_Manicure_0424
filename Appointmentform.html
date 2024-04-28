@@ -6,7 +6,6 @@
     <title>MANICURE</title>
     <link rel="icon" href="./image/logo.png" type="image/png" />
     <link rel="stylesheet" type="text/css" href="./css/appointmentForm.css" />
-    <!-- Air datepicker Css -->
     <link
       href="https://cdn.jsdelivr.net/npm/air-datepicker@3.3.5/air-datepicker.min.css"
       rel="stylesheet"
@@ -14,14 +13,13 @@
   </head>
   <body>
     <div id="app">
-      <!-- Navbar -->
       <div class="frame">
         <div class="left" @click="goToHomepage" style="cursor: pointer"></div>
         <div class="right">
-          <div class="item"><a href="./Nailstyle-0.html">美甲款式</a></div>
-          <div class="item"><a href="./Storeguide.html">店家導覽</a></div>
-          <div class="item"><a href="./Appointmentform.html">預約表單</a></div>
-          <div class="item"><a href="./mproblem.html">常見問題</a></div>
+          <div class="item"><a href="./nailStyle_0.html">美甲款式</a></div>
+          <div class="item"><a href="./storeGuide.html">店家導覽</a></div>
+          <div class="item"><a href="./appointmentForm.html">預約表單</a></div>
+          <div class="item"><a href="./mProblem.html">常見問題</a></div>
         </div>
         <div class="right1">
           <button class="item-right1">
@@ -30,54 +28,25 @@
         </div>
       </div>
 
-      <!-- Title -->
       <div class="title">
         <div class="text">預約表單</div>
       </div>
 
-      <!-- Main Content -->
       <div class="middle">
         <div class="formpicture">
           <ul class="slides">
-            <input type="radio" id="control-1" name="control" checked />
-            <input type="radio" id="control-2" name="control" />
-            <input type="radio" id="control-3" name="control" />
-            <input type="radio" id="control-4" name="control" />
-
-            <li class="slide">
-              <img
-                src="./image/nailstyle-Christmas/05-musenails.jpg"
-                width="300px"
-                height="300px"
-              />
+            <input
+              type="radio"
+              v-for="(control, index) in sliderControls"
+              :id="control"
+              name="control"
+              @click="handleSliderControl(index)"
+            />
+            <li class="slide" v-for="(image, index) in sliderImages">
+              <img :src="image" width="300px" height="300px" />
             </li>
-            <li class="slide">
-              <img
-                src="./image/nailstyle-Maillard/04-metea_.art.jpg"
-                width="300px"
-                height="300px"
-              />
-            </li>
-            <li class="slide">
-              <img
-                src="./image/nailstyle-modeling/01-time_fans.studio.jpg"
-                width="300px"
-                height="300px"
-              />
-            </li>
-            <li class="slide">
-              <img
-                src="./image/nailstyle-monochrome/08-youzinei.nail.jpg"
-                width="300px"
-                height="300px"
-              />
-            </li>
-
             <div class="controls-visible">
-              <label for="control-1"></label>
-              <label for="control-2"></label>
-              <label for="control-3"></label>
-              <label for="control-4"></label>
+              <label :for="control" v-for="control in sliderControls"></label>
             </div>
           </ul>
         </div>
@@ -85,7 +54,7 @@
         <div class="formtext">
           <p>
             <label>選擇店家：</label>
-            <select name="store" id="store" v-model="selectedStore">
+            <select v-model="formData.selectedStore">
               <option
                 v-for="store in stores"
                 :value="store.value"
@@ -139,7 +108,6 @@
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="footer">
         <div class="footer1">
           <div class="footer1_pic"></div>

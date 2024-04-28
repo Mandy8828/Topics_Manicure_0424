@@ -63,6 +63,22 @@ const app = Vue.createApp({
         { name: "柚子捏", value: "柚子捏" },
         { name: "METEA ART", value: "METEA ART" },
       ],
+      formData: {
+        selectedStore: "",
+        selectedDate: "",
+        manicureType: "",
+        name: "",
+        phone: "",
+        remove: "",
+        extend: "",
+      },
+      sliderImages: [
+        "./image/nailstyle-Christmas/05-musenails.jpg",
+        "./image/nailstyle-Maillard/04-metea_.art.jpg",
+        "./image/nailstyle-modeling/01-time_fans.studio.jpg",
+        "./image/nailstyle-monochrome/08-youzinei.nail.jpg",
+      ],
+      sliderControls: ["control-1", "control-2", "control-3", "control-4"],
     };
   },
   methods: {
@@ -88,10 +104,8 @@ const app = Vue.createApp({
   },
 
   mounted() {
-    // Call Air datepicker function
     const datepicker = new AirDatepicker(this.$refs.myDatepicker, {
       locale: en,
-      // ... other datepicker settings ...
     });
   },
 });

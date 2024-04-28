@@ -47,10 +47,6 @@ const app = Vue.createApp({
         this.filterStoresByLocation(location);
       });
     });
-
-    document.querySelector("#Homepage").addEventListener("click", () => {
-      this.goToHomepage();
-    });
   },
 });
 
